@@ -17,6 +17,9 @@ public class Animal {
     }
 
     @Column(nullable = false)
+    private String tipo;
+
+    @Column(nullable = false)
     private String nomeProvisorio;
 
     @Column(nullable = false)
@@ -113,5 +116,13 @@ public class Animal {
 
     public void setPorte(String porte) {
         this.porte = porte;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }
